@@ -17,10 +17,10 @@ public class Panel extends JPanel {
 
 
     public Panel() {
-        bButton = new Button(this);
-        bButton2 = new Button2(this);
-        bButton3 = new Button3(this);
-        bButton4 = new Button4(this);
+        bButton = new Button();
+        bButton2 = new Button2();
+        bButton3 = new Button3();
+        bButton4 = new Button4();
 
         setLayout(new FlowLayout());
         setPreferredSize(new Dimension(WIDTH, HEIGHT));

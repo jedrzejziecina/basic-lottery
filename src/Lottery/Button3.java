@@ -9,11 +9,8 @@ import static javax.swing.JOptionPane.showMessageDialog;
 
 class Button3 extends JButton implements ActionListener {
 
-    private JPanel Panel;
-
-    Button3(JPanel Panel) {
+    Button3() {
         super("Przygotuj swoje losowanie");
-        this.Panel = Panel;
         addActionListener(this);
     }
 

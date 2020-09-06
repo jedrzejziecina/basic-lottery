@@ -12,12 +12,9 @@ import static javax.swing.JOptionPane.showMessageDialog;
 
 class Button4 extends JButton implements ActionListener {
 
-    private JPanel Panel = new JPanel();
 
-
-    Button4(JPanel Panel) {
+    Button4() {
         super("Spróbuj szczęścia! Zgadnij 2 z 6!");
-        this.Panel = Panel;
         addActionListener(this);
     }
 
@@ -28,8 +25,6 @@ class Button4 extends JButton implements ActionListener {
 
         JTextField firstNr = new JTextField(5);
         JTextField secNr = new JTextField(5);
-
-        JPanel myPanel = new JPanel();
 
         Object[] message = {
                 "Pierwsza liczba:", firstNr,
@@ -67,7 +62,7 @@ class Button4 extends JButton implements ActionListener {
                 int y = nrlist.get(1);
 
                 if ((a == error) || (b == error)) {
-
+                    //
                 } else {
                     if (a == b) {
                         showMessageDialog(null, "Podane liczby nie mogą być takie same. \nSpróbuj ponownie!");
@@ -85,7 +80,7 @@ class Button4 extends JButton implements ActionListener {
                 JOptionPane.showMessageDialog(null, "Wymagane jest podanie dwóch liczb!");
             }
         }else if(option == JOptionPane.CANCEL_OPTION){
-
+        //
         }
     }
 }

@@ -11,11 +11,8 @@ import static javax.swing.JOptionPane.showMessageDialog;
 
 class Button2 extends JButton implements ActionListener {
 
-    private JPanel Panel;
-
-    Button2(JPanel Panel) {
+    Button2() {
         super("Rozpocznij losowanie 3 z 15");
-        this.Panel = Panel;
         addActionListener(this);
     }
 
