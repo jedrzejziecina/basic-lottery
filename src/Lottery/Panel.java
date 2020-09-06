@@ -10,17 +10,11 @@ public class Panel extends JPanel {
     public static final int WIDTH = 330;
 
 
-    private JButton bButton;
-    private JButton bButton2;
-    private JButton bButton3;
-    private JButton bButton4;
-
-
     public Panel() {
-        bButton = new Button();
-        bButton2 = new Button2();
-        bButton3 = new Button3();
-        bButton4 = new Button4();
+        JButton bButton = new Button();
+        JButton bButton2 = new Button2();
+        JButton bButton3 = new Button3();
+        JButton bButton4 = new Button4();
 
         setLayout(new FlowLayout());
         setPreferredSize(new Dimension(WIDTH, HEIGHT));
