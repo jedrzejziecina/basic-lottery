@@ -64,16 +64,18 @@ class Button4 extends JButton implements ActionListener {
                 if ((a == error) || (b == error)) {
                     //
                 } else {
-                    if (a == b) {
-                        showMessageDialog(null, "Podane liczby nie mogą być takie same. \nSpróbuj ponownie!");
-                    } else if (((a == x) && (b == y)) || ((b == x) && (a == y))){
-                        showMessageDialog(null, "Pełen sukces! \nTwoje typowania to: " + a + " i " + b + "\nWynik losowania to: " + x + " i " + y);
-                    } else if (((a == x) || (a == y)) || ((b == x) || (b == y))) {
-                        showMessageDialog(null, "Częściowy sukces! \nTwoje typowania to: " + a + " i " + b + "\nWynik losowania to: " + x + " i " + y);
-                    } else if (((a > 6) || (a < 1)) || ((b > 6) || (b < 1))) {
-                        showMessageDialog(null, "Wpisane wartości wychodzą poza pulę losowania. \nTwoje typowania to: " + a + " i " + b + "\nProszę wpisać liczby w przedziale od 1 do 6");
-                    } else {
-                        showMessageDialog(null, "Chybienie! \nTwoje typowania to: " + a + " i " + b + "\nWynik losowania to: " + x + " i " + y);
+                    if (((a > 6) || (a < 1)) || ((b > 6) || (b < 1))) {
+                        showMessageDialog(null, "Wpisano liczbę spoza puli losowania. \nSpróbuj jeszcze raz!");
+                    }else {
+                        if (a == b) {
+                            showMessageDialog(null, "Podane liczby nie mogą być takie same. \nSpróbuj ponownie!");
+                        } else if (((a == x) && (b == y)) || ((b == x) && (a == y))) {
+                            showMessageDialog(null, "Pełen sukces! \nTwoje typowania to: " + a + " i " + b + "\nWynik losowania to: " + x + " i " + y);
+                        } else if (((a == x) || (a == y)) || ((b == x) || (b == y))) {
+                            showMessageDialog(null, "Częściowy sukces! \nTwoje typowania to: " + a + " i " + b + "\nWynik losowania to: " + x + " i " + y);
+                        } else {
+                            showMessageDialog(null, "Chybienie! \nTwoje typowania to: " + a + " i " + b + "\nWynik losowania to: " + x + " i " + y);
+                        }
                     }
                 }
             } catch (Exception exe) {
