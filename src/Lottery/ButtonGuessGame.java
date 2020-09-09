@@ -10,10 +10,10 @@ import javax.swing.*;
 
 import static javax.swing.JOptionPane.showMessageDialog;
 
-class Button4 extends JButton implements ActionListener {
+class ButtonGuessGame extends JButton implements ActionListener {
 
 
-    Button4() {
+    ButtonGuessGame() {
         super("Spróbuj szczęścia! Zgadnij 2 z 6!");
         addActionListener(this);
     }
@@ -82,7 +82,7 @@ class Button4 extends JButton implements ActionListener {
                 JOptionPane.showMessageDialog(null, "Wymagane jest podanie dwóch liczb!");
             }
         }else if(option == JOptionPane.CANCEL_OPTION){
-        //
+            //
         }
     }
 }

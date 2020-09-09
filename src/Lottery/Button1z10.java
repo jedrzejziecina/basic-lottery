@@ -6,9 +6,9 @@ import javax.swing.*;
 
 import static javax.swing.JOptionPane.showMessageDialog;
 
-class Button extends JButton implements ActionListener {
+class Button1z10 extends JButton implements ActionListener {
 
-    Button() {
+    Button1z10() {
         super("Rozpocznij losowanie 1 z 10");
         addActionListener(this);
     }
