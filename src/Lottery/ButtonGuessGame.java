@@ -81,8 +81,6 @@ class ButtonGuessGame extends JButton implements ActionListener {
             } catch (Exception exe) {
                 JOptionPane.showMessageDialog(null, "Wymagane jest podanie dwóch liczb!");
             }
-        }else if(option == JOptionPane.CANCEL_OPTION){
-            //
         }
     }
 }

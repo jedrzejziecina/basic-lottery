@@ -61,8 +61,6 @@ class ButtonXzY extends JButton implements ActionListener {
                 JOptionPane.showMessageDialog(null, "Wymagane jest uzupełnienie wszystkich pól!");
             }
 
-        }else if(option == JOptionPane.CANCEL_OPTION){
-            //
         }
     }
 }
